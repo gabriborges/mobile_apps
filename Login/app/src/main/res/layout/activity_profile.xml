@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/textViewProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil do Usuário"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewProfileTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@example.com"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewProfileTitle"
+        app:layout_constraintStart_toEndOf="@id/textViewEmailLabel"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/textViewPasswordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailLabel"
+        app:layout_constraintStart_toEndOf="@id/textViewPasswordLabel"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/buttonBackToLogin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        app:layout_constraintTop_toBottomOf="@id/textViewPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
