@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Diario de Classe</string>
+    <string name="salvar">Salvar</string>
+    <string name="nota_n3">Nota N3</string>
+    <string name="nota_n2">Nota N2</string>
+    <string name="nota_n1">Nota N1</string>
+    <string name="nome_do_aluno">Nome do Aluno</string>
+</resources>
